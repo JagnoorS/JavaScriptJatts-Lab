@@ -17,15 +17,18 @@ function IncrementByAmount(props) {
 
 
     return (
+        
         <div>
           <Typography>Please enter a number: </Typography>
             
             <input type="number" value={counter} onChange={handleChange} />
 
-            <button onClick={submitCount}>Increment by Amount</button>
-            <div>
-              <Typography>{"Count: " + counter}</Typography>
-             </div>
+            <button onClick= {() => {
+                alert("Count: " + counter)
+            }}>Increment by Amount</button>
+
+            
+             
         </div>
     );
 }
